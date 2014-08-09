@@ -1,0 +1,19 @@
+C:\Users\lancer1977\Dropbox\Code\School Tools WPF\ClipboardMonitorClass\bin\Debug\ClipboardMonitorClass.dll
+C:\Users\lancer1977\Dropbox\Code\School Tools WPF\ClipboardMonitorClass\bin\Debug\ClipboardMonitorClass.pdb
+C:\Users\lancer1977\Dropbox\Code\School Tools WPF\ClipboardMonitorClass\obj\Debug\ClipboardMonitorClass.csprojResolveAssemblyReference.cache
+C:\Users\lancer1977\Dropbox\Code\School Tools WPF\ClipboardMonitorClass\obj\Debug\ClipboardMonitorClass.dll
+C:\Users\lancer1977\Dropbox\Code\School Tools WPF\ClipboardMonitorClass\obj\Debug\ClipboardMonitorClass.pdb
+C:\Users\lancer1977\Dropbox\Code\ClipboardMonitorClass\bin\Debug\ClipboardMonitorClass.dll
+C:\Users\lancer1977\Dropbox\Code\ClipboardMonitorClass\bin\Debug\ClipboardMonitorClass.pdb
+C:\Users\lancer1977\Dropbox\Code\ClipboardMonitorClass\obj\Debug\ClipboardMonitorClass.dll
+C:\Users\lancer1977\Dropbox\Code\ClipboardMonitorClass\obj\Debug\ClipboardMonitorClass.pdb
+C:\Users\lancer1977\Dropbox\Code\ClipboardMonitorClass\obj\Debug\ClipboardMonitorClass.csprojResolveAssemblyReference.cache
+C:\Users\Chris\Dropbox\Code\ClipboardMonitorClass\bin\Debug\ClipboardMonitorClass.dll
+C:\Users\Chris\Dropbox\Code\ClipboardMonitorClass\bin\Debug\ClipboardMonitorClass.pdb
+C:\Users\Chris\Dropbox\Code\ClipboardMonitorClass\obj\Debug\ClipboardMonitorClass.csprojResolveAssemblyReference.cache
+C:\Users\Chris\Dropbox\Code\ClipboardMonitorClass\obj\Debug\ClipboardMonitorClass.dll
+C:\Users\Chris\Dropbox\Code\ClipboardMonitorClass\obj\Debug\ClipboardMonitorClass.pdb
+C:\Users\Chris\Dropbox\Code\!Libraries\ClipboardMonitorClass\bin\Debug\ClipboardMonitorClass.dll
+C:\Users\Chris\Dropbox\Code\!Libraries\ClipboardMonitorClass\bin\Debug\ClipboardMonitorClass.pdb
+C:\Users\Chris\Dropbox\Code\!Libraries\ClipboardMonitorClass\obj\Debug\ClipboardMonitorClass.dll
+C:\Users\Chris\Dropbox\Code\!Libraries\ClipboardMonitorClass\obj\Debug\ClipboardMonitorClass.pdb
