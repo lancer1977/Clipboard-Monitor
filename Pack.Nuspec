@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>PolyhydraGames.ClipboardMonitor</id>
+    <version>1.0.2</version>
+    <authors>Polyhydra Games</authors>
+    <owners>Polyhydra Games</owners>
+    <!-- 
+      <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+      <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+      <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    -->
+     
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>PolyhydraGames Clipboard Monitor for WPF</description> 
+    <copyright>Copyright 2018</copyright>
+    <tags>PolyhydraGames WPF Clipboard</tags>
+    <releaseNotes>
+
+      1.0.1 Initial Package
+      1.0.2 Added MvxWindow abstraction
+ 
+    </releaseNotes>
+ <licenseUrl >https://opensource.org/licenses/MIT</licenseUrl>
+ <dependencies>  
+</dependencies>
+  </metadata>
+    <files>  
+      <file src=".\ClipboardMonitor.Core\bin\Release\netstandard2.0\ClipboardMonitor.Core.dll" target="lib\netstandard2.0" /> 
+       <file src=".\ClipboardMonitor.WPF\bin\Release\ClipboardMonitor.*.dll" target="lib\net45" />  
+    </files>
+</package>

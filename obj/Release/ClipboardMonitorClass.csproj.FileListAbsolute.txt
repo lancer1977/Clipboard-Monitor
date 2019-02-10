@@ -1,5 +1,0 @@
-C:\Users\Chris\Dropbox\Code\!Libraries\ClipboardMonitorClass\bin\Release\ClipboardMonitorClass.dll
-C:\Users\Chris\Dropbox\Code\!Libraries\ClipboardMonitorClass\bin\Release\ClipboardMonitorClass.pdb
-C:\Users\Chris\Dropbox\Code\!Libraries\ClipboardMonitorClass\obj\Release\ClipboardMonitorClass.csprojResolveAssemblyReference.cache
-C:\Users\Chris\Dropbox\Code\!Libraries\ClipboardMonitorClass\obj\Release\ClipboardMonitorClass.dll
-C:\Users\Chris\Dropbox\Code\!Libraries\ClipboardMonitorClass\obj\Release\ClipboardMonitorClass.pdb

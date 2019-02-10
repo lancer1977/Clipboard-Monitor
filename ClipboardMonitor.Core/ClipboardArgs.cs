@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ClipboardMonitorClass
+namespace ClipboardMonitor.Core
 {
     public class ClipboardArgs : EventArgs
     {
