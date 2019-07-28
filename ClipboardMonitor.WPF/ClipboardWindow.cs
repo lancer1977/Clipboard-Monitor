@@ -44,12 +44,13 @@ namespace ClipboardMonitor.WPF
         }
         private IntPtr HwndSourceHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
         {
+             _viewerHandle = lParam;
             try
             {
                 switch (msg)
                 {
                     case WmChangecbchain:
-                        _viewerHandle = lParam;
+                       
                         if (_viewerHandle != IntPtr.Zero)
                         {
                             SendMessage(_viewerHandle, msg, wParam, lParam);

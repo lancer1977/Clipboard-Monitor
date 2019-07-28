@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>PolyhydraGames.ClipboardMonitor</id>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <authors>Polyhydra Games</authors>
     <owners>Polyhydra Games</owners>
     <!-- 
@@ -19,7 +19,7 @@
 
       1.0.1 Initial Package
       1.0.2 Added MvxWindow abstraction
- 
+   1.0.4 Added a int assign on clipboard change
     </releaseNotes>
  <licenseUrl >https://opensource.org/licenses/MIT</licenseUrl>
  <dependencies>  
