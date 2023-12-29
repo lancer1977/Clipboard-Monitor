@@ -1,0 +1,54 @@
+# Starter pipeline
+name: 1.0.0.$(rev:r)
+variables: 
+- name: Project.Path
+  value: '**/ClipboardMonitor.Listener.csproj'
+- name: Configuration
+  value: Release
+  
+trigger:
+  branches:
+    include:
+    - refs/heads/master
+  paths:
+    include:
+    - ClipboardMonitor.Listener
+jobs:
+- job: Phase_1 
+  cancelTimeoutInMinutes: 1
+  pool:
+    name: Default
+  steps:
+  - checkout: self 
+  - task: DotNetCoreCLI@2
+    displayName: dotnet restore
+    inputs:
+      command: restore
+      projects: $(Project.Path)
+      vstsFeed: 015fc12f-cd63-4ab4-8d6a-dc889e53bf70 
+  - task: DotNetCoreCLI@2
+    displayName: dotnet build 
+    inputs:
+      projects: $(Project.Path)
+      arguments: --configuration $(Configuration) --no-restore
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: 'pack'
+      packagesToPack: '$(Project.Path)'
+      configuration: '$(Configuration)'
+      nobuild: true
+      versioningScheme: 'byBuildNumber'
+  - task: NuGetCommand@2
+    displayName: NuGet push
+    inputs:
+      command: push
+      feedPublish: 015fc12f-cd63-4ab4-8d6a-dc889e53bf70
+      allowPackageConflicts: false
+  - task: ado-discord-webhook@1
+    inputs:
+      channelId: '1083779130576879656'
+      webhookKey: 'QAhq2PpBl9iUSv51rQNPajpVZivOdj-hMcClCwHBz7OFdyxuI9Ni_Ykvglpxw53oDX9D'
+      name: 'Polyhydra Build Clipboard.ddddd'
+      avatar: 'https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/277759422_459407522643032_5740191239763665615_n.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Eh7rt73EuYcAX-1w6EJ&_nc_ht=scontent-iad3-1.xx&oh=00_AfA8K4k2WtaqlaA0CEznY-Hk2DZY3gsdDwPp-XOw3L1B3Q&oe=64121C61'
+      messageType: 'content'
+      content: 'PolyhydraGames.Core.DRYIOC Completed Build: $(Build.BuildNumber)'

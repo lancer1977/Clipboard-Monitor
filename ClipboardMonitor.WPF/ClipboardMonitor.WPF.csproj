@@ -11,4 +11,21 @@
     <ProjectReference Include="..\ClipboardMonitor.Core\ClipboardMonitor.Core.csproj" />
   </ItemGroup>
 
+    <OutputType>Library</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MvvmCross.Platforms.Wpf" Version="9.0.10" />
+    <PackageReference Include="PolyhydraGames.Core.ReactiveUI" Version="1.0.0.40" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClipboardMonitor.Core\ClipboardMonitor.Core.csproj" /> 
+  </ItemGroup>
+
 </Project>
