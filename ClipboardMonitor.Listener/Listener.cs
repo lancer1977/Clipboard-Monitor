@@ -1,10 +1,6 @@
 ﻿using EmbedIO;
-using System.Net.Http;
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
-using System.Threading;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.Xml.Linq;
 
 namespace ClipboardMonitor.Listener;
 

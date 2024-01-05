@@ -4,6 +4,6 @@
         xmlns:wpf="clr-namespace:ClipboardMonitor.WPF;assembly=ClipboardMonitor.WPF"
         xmlns:views="clr-namespace:ClipboardMonitor.Broadcaster.Views"
 
-        Title="MainWindow" Height="450" Width="800">
+        Title="Clipboard Broadcaster" Height="450" Width="500">
     <views:SettingsPage></views:SettingsPage>
 </wpf:ClipboardWindow>

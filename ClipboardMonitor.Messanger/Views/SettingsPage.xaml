@@ -7,13 +7,21 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="SettingsPage">
- 
-        <StackPanel >
-            <CheckBox IsChecked="{Binding Path=Enabled, Mode=TwoWay}">Enabled</CheckBox>
-            <TextBlock>Port</TextBlock>
-            <TextBox Text="{Binding Port}"></TextBox>
-            <TextBlock>Address</TextBlock>
-            <TextBox Text="{Binding Address}"></TextBox>
-        <Button Click="ButtonBase_OnClick">Tester</Button>
-        </StackPanel> 
+ <Grid>
+     <Grid.RowDefinitions>
+         <RowDefinition Height="Auto" />
+         <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+     <StackPanel VerticalAlignment="Stretch">
+         <CheckBox IsChecked="{Binding Path=Enabled, Mode=TwoWay}">Enabled</CheckBox>
+         <TextBlock>Port</TextBlock>
+         <TextBox Text="{Binding Port, Mode=TwoWay}"></TextBox>
+         <TextBlock>Address</TextBlock>
+         <TextBox Text="{Binding Address, Mode=TwoWay}"></TextBox>
+         <Button Click="ButtonBase_OnClick">Tester</Button>
+   
+     </StackPanel>
+     <TextBlock Grid.Row="1" VerticalAlignment="Stretch" Height="Auto" Text="{Binding Preview}"></TextBlock>
+    </Grid>
+
 </Page>
