@@ -8,7 +8,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClipboardMonitor.Core", "Cl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClipboardMonitor.WPF", "ClipboardMonitor.WPF\ClipboardMonitor.WPF.csproj", "{36CE9AE2-0974-4E5E-BA64-8BA44F534607}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClipboardMonitor.Broadcaster", "ClipboardMonitor.Messanger\ClipboardMonitor.Broadcaster.csproj", "{345225C5-15B2-48ED-B5B6-C442045EBC09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClipboardMonitor.Broadcaster", "ClipboardMonitor.Messenger\ClipboardMonitor.Broadcaster.csproj", "{345225C5-15B2-48ED-B5B6-C442045EBC09}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Broadcast.Listener.Test", "Broadcast.Listener.Test\Broadcast.Listener.Test.csproj", "{1AB5BCA1-FB13-43CB-AE55-3DC05A57CD12}"
 EndProject

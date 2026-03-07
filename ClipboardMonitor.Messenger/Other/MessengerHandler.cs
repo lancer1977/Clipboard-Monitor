@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Net.Http;
 using System.Text;
@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClipboardMonitor.Broadcaster.Other;
 
-public class HttpClientMessangerHandler : IMessangerHandler
+public class HttpClientMessengerHandler : IMessengerHandler
 {
     private readonly HttpClient _httpClient = new HttpClient();
     public string Port { get; set; }

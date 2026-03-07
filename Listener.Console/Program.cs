@@ -1,11 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
+// See https://aka.ms/new-console-template for more information
 
 using System.Diagnostics;
 using ClipboardMonitor.Listener;
 
-Console.WriteLine("Hello, World!");
-var listener = new Listener(){Port = "8080"};
+var port = "8080"; // default
+if (args.Length > 0)
+{
+    port = args[0];
+}
+Console.WriteLine($"Starting Clipboard Monitor Listener on port {port}...");
+var listener = new Listener(){Port = port};
 listener.Start();
-Console.WriteLine("Now running on port 8080.");
+Console.WriteLine($"Now running on port {port}.");
 Console.WriteLine("Press a Key to Quit");
 Console.ReadKey();

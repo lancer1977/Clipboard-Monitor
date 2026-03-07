@@ -14,7 +14,7 @@ public class SettingsViewModel : PolyhydraGames.Core.ReactiveUI.ViewModelAsyncBa
     [Reactive] public bool Enabled { get; set; }
     [Reactive] public string Preview { get; set; }
 
-    public SettingsViewModel(IClipboardMonitor monitor, HttpClientMessangerHandler handler)
+    public SettingsViewModel(IClipboardMonitor monitor, HttpClientMessengerHandler handler)
     {
         Port = "8080";
         Address = "http://localhost";

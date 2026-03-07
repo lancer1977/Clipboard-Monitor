@@ -1,20 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
-    <UseWPF>true</UseWPF>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\ClipboardMonitor.Core\ClipboardMonitor.Core.csproj" />
-  </ItemGroup>
-
     <OutputType>Library</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <ApplicationIcon />
     <StartupObject />
   </PropertyGroup>
@@ -25,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ClipboardMonitor.Core\ClipboardMonitor.Core.csproj" /> 
+    <ProjectReference Include="..\ClipboardMonitor.Core\ClipboardMonitor.Core.csproj" />
   </ItemGroup>
 
 </Project>

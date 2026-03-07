@@ -1,4 +1,4 @@
-﻿using EmbedIO;
+using EmbedIO;
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
 
@@ -8,7 +8,8 @@ public class Listener : IListener
     {
         private ISubject<string> Subject { get; }
         public IObservable<string> OnMessageReceived { get; }
-        public string Port { get; set; }
+        public string Port { get; set; } = "8080";
+        public string Address { get; set; } = "*"; // Default to all interfaces
 
         public Listener()
         {
@@ -19,7 +20,7 @@ public class Listener : IListener
         {
             
             //EndPointManager.UseIpv6 = false; 
-            var universalUrl = $"http://*:{Port}";
+            var universalUrl = $"http://{Address}:{Port}";
             var server = new WebServer(o => o.WithUrlPrefix(universalUrl).WithMode(HttpListenerMode.EmbedIO))
                 .WithLocalSessionManager();
 

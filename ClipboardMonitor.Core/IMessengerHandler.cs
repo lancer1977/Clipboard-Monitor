@@ -1,9 +1,9 @@
-﻿using System.Threading.Tasks;
+using System.Threading.Tasks;
 
 namespace ClipboardMonitor.Core
 {
 
-    public interface IMessangerHandler
+    public interface IMessengerHandler
     {
         Task SendMessage(string json);
     }

@@ -29,7 +29,7 @@ namespace ClipboardMonitor.Broadcaster.Views
             InitializeComponent();
             var win = App.Current.MainWindow as MainWindow;
 
-            DataContext = ViewModel = new SettingsViewModel(win.ClipboardMonitor, new HttpClientMessangerHandler());
+            DataContext = ViewModel = new SettingsViewModel(win.ClipboardMonitor, new HttpClientMessengerHandler());
         }
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
