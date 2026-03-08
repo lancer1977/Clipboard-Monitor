@@ -5,6 +5,6 @@ namespace ClipboardMonitor.Core
 
     public interface IMessengerHandler
     {
-        Task SendMessage(string json);
+        Task SendMessage(string message);
     }
 }

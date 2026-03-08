@@ -13,15 +13,16 @@ public class HttpClientMessengerHandler : IMessengerHandler
     public string Address { get; set; }
     public bool Enabled { get; set; }
 
-    public async Task SendMessage(string json)
+    public async Task SendMessage(string message)
     {
         try
         {
-            //var json = JsonConvert.SerializeObject(payload);
-            var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
+            // NOTE: SettingsViewModel passes raw clipboard text (not JSON).
+            // Use text/plain so the receiver can treat the body as the message.
+            var httpContent = new StringContent(message, Encoding.UTF8, "text/plain");
             var url = $"{Address}:{Port}";
             Debug.WriteLine(url);
-            Debug.WriteLine(json);
+            Debug.WriteLine(message);
             await _httpClient.PostAsync(url, httpContent);
         }
         catch(Exception ex)

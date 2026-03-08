@@ -58,7 +58,7 @@ var messenger = new HttpClientMessengerHandler
     Enabled = true
 };
 
-await messenger.SendMessage("{\"action\":\"test\"}");
+await messenger.SendMessage("test message");
 ```
 
 ### curl example to verify listener
@@ -66,11 +66,11 @@ await messenger.SendMessage("{\"action\":\"test\"}");
 ```bash
 # Test the listener is running
 curl -X POST http://localhost:8080/ \
-  -H "Content-Type: application/json" \
-  -d '{"text":"test message"}'
+  -H "Content-Type: text/plain" \
+  -d 'test message'
 
 # Test remote listener
 curl -X POST http://192.168.1.100:8080/ \
-  -H "Content-Type: application/json" \
-  -d '{"text":"test message"}'
+  -H "Content-Type: text/plain" \
+  -d 'test message'
 ```
